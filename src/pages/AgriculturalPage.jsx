@@ -207,8 +207,8 @@ export default function AgriculturalPage() {
         </div>
       </section>
 
-      {/* Before & After */}
-      <section className="py-20 px-6 bg-navy-900">
+      {/* Before & After — uncomment when photos are ready */}
+      {/* <section className="py-20 px-6 bg-navy-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-sun-500 text-xs font-semibold tracking-widest uppercase mb-3">Our Work</p>
@@ -223,7 +223,7 @@ export default function AgriculturalPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Process */}
       <section className="py-20 px-6 bg-navy-950">
