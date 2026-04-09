@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
+import SEO from '../components/SEO'
+import { localBusinessSchema, faqSchema, serviceSchema, SITE_URL } from '../data/seoData'
 
 const benefits = [
   {
@@ -99,8 +101,24 @@ const beforeAfterPairs = [
 ]
 
 export default function MarinePage() {
+  const schemas = [
+    localBusinessSchema,
+    serviceSchema({
+      name: 'Marine Window Tinting',
+      description: 'Specialized marine window tinting for boats, yachts, and waterfront properties on the Chesapeake Bay and Eastern Maryland coast. Salt-resistant, marine-grade films for heat rejection, anti-glare navigation, and cabin privacy. Licensed 3M authorized dealer.',
+      url: `${SITE_URL}/services/marine`,
+    }),
+    faqSchema(faqs),
+  ]
+
   return (
     <div className="bg-navy-950 min-h-screen">
+      <SEO
+        title="Marine Window Tinting | Chesapeake Bay & Eastern Maryland"
+        description="Marine-grade window tinting for boats, yachts & waterfront properties on the Chesapeake Bay and Eastern Maryland coast. Salt-resistant films, anti-glare navigation, cabin privacy. Licensed 3M dealer. Free quote."
+        canonical="/services/marine"
+        schemas={schemas}
+      />
       <Navbar />
 
       {/* Hero */}

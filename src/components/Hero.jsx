@@ -21,13 +21,21 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-sun-500/10 border border-sun-500/30 rounded-full px-4 py-1.5 mb-8">
-          <span className="w-2 h-2 rounded-full bg-sun-500 animate-pulse" />
-          <span className="text-sun-500 text-xs font-semibold tracking-widest uppercase">
-            Premium Glass Tinting
-          </span>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center pt-20">
+        {/* Certification badges */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+          <div className="inline-flex items-center gap-2 bg-sun-500/10 border border-sun-500/30 rounded-full px-4 py-1.5">
+            <span className="w-2 h-2 rounded-full bg-sun-500 animate-pulse" />
+            <span className="text-sun-500 text-xs font-semibold tracking-widest uppercase">
+              3M Authorized Dealer
+            </span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-navy-600/20 border border-navy-600/40 rounded-full px-4 py-1.5">
+            <span className="w-2 h-2 rounded-full bg-navy-500" />
+            <span className="text-navy-500 text-xs font-semibold tracking-widest uppercase">
+              Flat Glass &amp; PPF Certified
+            </span>
+          </div>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight mb-6">
@@ -40,9 +48,9 @@ export default function Hero() {
         </h1>
 
         <p className="text-white/55 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Eco-friendly tinting solutions for commercial, residential, marine,
-          and agricultural applications across the DC Metro Area. Craftsmanship
-          you can trust, results that last.
+          Eastern Maryland's licensed 3M dealer for commercial, marine,
+          residential, and agricultural window tinting. Serving the Chesapeake
+          Bay region, Delaware, and Pennsylvania.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

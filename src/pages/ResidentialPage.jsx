@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
+import SEO from '../components/SEO'
+import { localBusinessSchema, faqSchema, serviceSchema, SITE_URL } from '../data/seoData'
 
 const benefits = [
   {
@@ -93,8 +95,24 @@ const beforeAfterPairs = [
 ]
 
 export default function ResidentialPage() {
+  const schemas = [
+    localBusinessSchema,
+    serviceSchema({
+      name: 'Residential Window Tinting',
+      description: 'Professional residential window tinting for homes across Eastern Maryland. UV protection up to 99%, heat reduction, glare control, privacy, and safety films. Licensed 3M authorized dealer.',
+      url: `${SITE_URL}/services/residential`,
+    }),
+    faqSchema(faqs),
+  ]
+
   return (
     <div className="bg-navy-950 min-h-screen">
+      <SEO
+        title="Residential Window Tinting in Eastern Maryland"
+        description="Protect your home with professional residential window tinting from Solara Tinting Solutions — a licensed 3M dealer serving Eastern Maryland, Delaware & Pennsylvania. UV protection, heat reduction, privacy & safety films. Free quote."
+        canonical="/services/residential"
+        schemas={schemas}
+      />
       <Navbar />
 
       {/* Hero */}

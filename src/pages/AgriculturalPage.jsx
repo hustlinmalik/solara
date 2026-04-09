@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
+import SEO from '../components/SEO'
+import { localBusinessSchema, faqSchema, serviceSchema, SITE_URL } from '../data/seoData'
 
 const benefits = [
   {
@@ -105,8 +107,24 @@ const beforeAfterPairs = [
 ]
 
 export default function AgriculturalPage() {
+  const schemas = [
+    localBusinessSchema,
+    serviceSchema({
+      name: 'Agricultural Equipment Window Tinting',
+      description: 'Window tinting for tractor cabs, combine harvesters, sprayers and agricultural equipment across Eastern Maryland and the Delmarva Peninsula. UV protection, heat rejection, anti-glare, and safety film for operators. Licensed 3M authorized dealer.',
+      url: `${SITE_URL}/services/agricultural`,
+    }),
+    faqSchema(faqs),
+  ]
+
   return (
     <div className="bg-navy-950 min-h-screen">
+      <SEO
+        title="Agricultural Equipment Window Tinting | Eastern Maryland"
+        description="Protect operators with professional agricultural window tinting for tractors, combines & equipment cabs across Eastern Maryland and the Delmarva Peninsula. Heat rejection, UV protection & anti-glare film. Licensed 3M dealer. Free quote."
+        canonical="/services/agricultural"
+        schemas={schemas}
+      />
       <Navbar />
 
       {/* Hero */}

@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
+import SEO from '../components/SEO'
+import { localBusinessSchema, faqSchema, serviceSchema, SITE_URL } from '../data/seoData'
 
 const benefits = [
   {
@@ -103,8 +105,24 @@ const beforeAfterPairs = [
 ]
 
 export default function CommercialPage() {
+  const schemas = [
+    localBusinessSchema,
+    serviceSchema({
+      name: 'Commercial Window Tinting',
+      description: 'Expert commercial window tinting for offices, retail, industrial, and institutional buildings across Eastern Maryland and the Delmarva Peninsula. Energy savings, glare reduction, safety and branding films. Licensed 3M authorized dealer.',
+      url: `${SITE_URL}/services/commercial`,
+    }),
+    faqSchema(faqs),
+  ]
+
   return (
     <div className="bg-navy-950 min-h-screen">
+      <SEO
+        title="Commercial Window Tinting in Eastern Maryland & Delmarva"
+        description="Lower energy costs and improve employee comfort with commercial window tinting from Solara Tinting Solutions — a licensed 3M dealer serving Eastern Maryland, Delaware & Pennsylvania. Energy-efficient, safety, and decorative film solutions. Free quote."
+        canonical="/services/commercial"
+        schemas={schemas}
+      />
       <Navbar />
 
       {/* Hero */}
