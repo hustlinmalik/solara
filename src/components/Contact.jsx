@@ -31,11 +31,14 @@ export default function Contact() {
           access_key: '503b8884-4b41-42ed-ac9f-49f94e700d94',
           subject: `New Quote Request — ${form.serviceType || 'General'} Tinting`,
           from_name: form.name,
-          name: form.name,
           email: form.email,
-          phone: form.phone || 'Not provided',
-          service_type: form.serviceType || 'Not specified',
-          message: form.message || 'No details provided',
+          message: `New quote request from: ${form.name}
+Phone: ${form.phone || 'Not provided'}
+Email: ${form.email}
+Service: ${form.serviceType || 'Not specified'}
+
+Project Details:
+${form.message || 'No details provided'}`,
           botcheck: '',
         }),
       })
