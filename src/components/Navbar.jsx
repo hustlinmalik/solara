@@ -37,7 +37,7 @@ export default function Navbar() {
               Solara
             </span>
             <span className="text-navy-500 text-[10px] tracking-[0.2em] uppercase font-medium">
-              Film Solutions
+              Tinting Solutions
             </span>
           </div>
         </a>
