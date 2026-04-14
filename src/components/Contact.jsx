@@ -28,7 +28,7 @@ export default function Contact() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS,
+          access_key: '503b8884-4b41-42ed-ac9f-49f94e700d94',
           subject: `New Quote Request — ${form.serviceType || 'General'} Tinting`,
           from_name: form.name,
           name: form.name,
