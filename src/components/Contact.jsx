@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const serviceTypes = ['Residential', 'Commercial', 'Marine', 'Other']
+const serviceTypes = ['Residential', 'Commercial', 'Marine', 'Agricultural', 'Other']
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -11,14 +11,45 @@ export default function Contact() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: `New Quote Request — ${form.serviceType || 'General'} Tinting`,
+          from_name: form.name,
+          name: form.name,
+          email: form.email,
+          phone: form.phone || 'Not provided',
+          service_type: form.serviceType || 'Not specified',
+          message: form.message || 'No details provided',
+          botcheck: '',
+        }),
+      })
+      const data = await res.json()
+      if (data.success) {
+        setSubmitted(true)
+      } else {
+        setError('Something went wrong. Please try again or call us directly.')
+      }
+    } catch {
+      setError('Unable to send message. Please try again or call us directly.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -155,11 +186,16 @@ export default function Contact() {
                   />
                 </div>
 
+                {error && (
+                  <p className="text-red-400 text-sm text-center">{error}</p>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-sun-500 hover:bg-sun-400 text-navy-950 font-bold py-4 rounded-xl transition-colors text-sm tracking-wide uppercase"
+                  disabled={loading}
+                  className="w-full bg-sun-500 hover:bg-sun-400 disabled:opacity-60 disabled:cursor-not-allowed text-navy-950 font-bold py-4 rounded-xl transition-colors text-sm tracking-wide uppercase"
                 >
-                  Request Free Quote
+                  {loading ? 'Sending…' : 'Request Free Quote'}
                 </button>
               </form>
             )}
