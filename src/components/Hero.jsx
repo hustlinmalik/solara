@@ -26,15 +26,15 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <div className="inline-flex items-center gap-2 bg-sun-500/10 border border-sun-500/30 rounded-full px-4 py-1.5">
             <span className="w-2 h-2 rounded-full bg-sun-500 animate-pulse" />
-            <span className="text-sun-500 text-xs font-semibold tracking-widest uppercase">
-              3M Authorized Dealer
-            </span>
+            <span className="text-sun-500 text-xs font-semibold tracking-widest uppercase">3M Authorized Dealer</span>
           </div>
           <div className="inline-flex items-center gap-2 bg-navy-600/20 border border-navy-600/40 rounded-full px-4 py-1.5">
             <span className="w-2 h-2 rounded-full bg-navy-500" />
-            <span className="text-navy-500 text-xs font-semibold tracking-widest uppercase">
-              Flat Glass &amp; PPF Certified
-            </span>
+            <span className="text-navy-500 text-xs font-semibold tracking-widest uppercase">Flat Glass Certified</span>
+          </div>
+          <div className="inline-flex items-center gap-2 bg-sun-500/10 border border-sun-500/30 rounded-full px-4 py-1.5">
+            <span className="w-2 h-2 rounded-full bg-sun-500 animate-pulse" />
+            <span className="text-sun-500 text-xs font-semibold tracking-widest uppercase">PPF Certified</span>
           </div>
         </div>
 
@@ -48,9 +48,9 @@ export default function Hero() {
         </h1>
 
         <p className="text-white/55 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Eastern Maryland's licensed 3M dealer for commercial, marine,
-          residential, and agricultural window tinting. Serving the Chesapeake
-          Bay region, Delaware, and Pennsylvania.
+          Eastern Maryland's trusted window tinting specialists for commercial,
+          marine, residential, and agricultural projects. Proudly serving the
+          Chesapeake Bay region, Delaware, and Pennsylvania.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
