@@ -28,7 +28,7 @@ export default function Contact() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          access_key: import.meta.env.VITE_WEB3FORMS,
           subject: `New Quote Request — ${form.serviceType || 'General'} Tinting`,
           from_name: form.name,
           name: form.name,
@@ -43,10 +43,10 @@ export default function Contact() {
       if (data.success) {
         setSubmitted(true)
       } else {
-        setError('Something went wrong. Please try again or call us directly.')
+        setError(`Error: ${data.message || 'Something went wrong. Please try again or call us directly.'}`)
       }
-    } catch {
-      setError('Unable to send message. Please try again or call us directly.')
+    } catch (err) {
+      setError(`Unable to send message: ${err.message}. Please call us directly.`)
     } finally {
       setLoading(false)
     }
