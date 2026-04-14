@@ -18,7 +18,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/35 text-sm leading-relaxed max-w-xs mb-4">
-              Licensed 3M authorized dealer specializing in commercial, marine,
+              Licensed tinting professionals specializing in commercial, marine,
               residential, and agricultural window tinting across Eastern Maryland,
               Delaware, and Pennsylvania.
             </p>

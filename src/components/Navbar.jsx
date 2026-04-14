@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3 group">
-          <SolaraLogo size={44} id="nav-logo" />
+          <SolaraLogo size={54} id="nav-logo" />
           <div className="flex flex-col leading-tight">
             <span className="text-white font-black text-lg tracking-widest uppercase">
               Solara
