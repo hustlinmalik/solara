@@ -20,7 +20,7 @@ function HomePage() {
   return (
     <div className="bg-navy-950 min-h-screen">
       <SEO
-        description="Solara Tinting Solutions is a licensed 3M authorized dealer specializing in commercial and marine window tinting across Eastern Maryland, Delaware, and Pennsylvania. Flat Glass & PPF certified. Free quotes."
+        description="Trusted window tinting specialists on the Eastern Shore, Maryland — commercial, marine, residential & agricultural. Licensed 3M dealer, Flat Glass & PPF certified. Free quotes."
         canonical="/"
         schemas={[localBusinessSchema]}
       />

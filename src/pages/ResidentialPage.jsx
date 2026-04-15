@@ -99,7 +99,7 @@ export default function ResidentialPage() {
     localBusinessSchema,
     serviceSchema({
       name: 'Residential Window Tinting',
-      description: 'Professional residential window tinting for homes across Eastern Maryland. UV protection up to 99%, heat reduction, glare control, privacy, and safety films. Licensed 3M authorized dealer.',
+      description: 'Professional residential window tinting for homes across the Eastern Shore and Maryland. UV protection up to 99%, heat reduction, glare control, privacy, and safety films. Licensed 3M authorized dealer.',
       url: `${SITE_URL}/services/residential`,
     }),
     faqSchema(faqs),
@@ -108,8 +108,8 @@ export default function ResidentialPage() {
   return (
     <div className="bg-navy-950 min-h-screen">
       <SEO
-        title="Residential Window Tinting in Eastern Maryland"
-        description="Protect your home with professional residential window tinting from Solara Tinting Solutions — a licensed 3M dealer serving Eastern Maryland, Delaware & Pennsylvania. UV protection, heat reduction, privacy & safety films. Free quote."
+        title="Residential Window Tinting | Eastern Shore & Maryland"
+        description="Professional residential window tinting on the Eastern Shore & Maryland, DE & PA. UV protection, heat reduction, privacy & safety films. Licensed 3M dealer. Free quote."
         canonical="/services/residential"
         schemas={schemas}
       />

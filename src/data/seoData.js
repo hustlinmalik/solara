@@ -20,7 +20,8 @@ export const BUSINESS = {
   facebook: 'https://www.facebook.com/profile.php?id=61583310317754',
   instagram: 'https://www.instagram.com/solaratinting/',
   areaServed: [
-    'Eastern Maryland',
+    'Eastern Shore of Maryland',
+    'Maryland',
     'Baltimore County, MD',
     'Anne Arundel County, MD',
     'Queen Anne\'s County, MD',
@@ -84,7 +85,7 @@ export const localBusinessSchema = {
     ],
   },
   description:
-    'Solara Tinting Solutions is a licensed 3M authorized dealer specializing in commercial, marine, residential, and agricultural window tinting across Eastern Maryland, Delaware, and Pennsylvania. Flat Glass and PPF certified.',
+    'Solara Tinting Solutions is a licensed 3M authorized dealer specializing in commercial, marine, residential, and agricultural window tinting across the Eastern Shore, Maryland, Delaware, and Pennsylvania. Flat Glass and PPF certified.',
 }
 
 /** Build a FAQPage schema from an array of {q, a} objects */

@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async'
 import { SITE_URL } from '../data/seoData'
 
-const DEFAULT_TITLE = 'Solara Tinting Solutions | Licensed 3M Dealer | Eastern Maryland'
+const DEFAULT_TITLE = 'Solara Tinting Solutions | Licensed 3M Dealer | Eastern Shore Maryland'
 const DEFAULT_DESC =
-  'Solara Tinting Solutions is a licensed 3M authorized dealer offering commercial, marine, residential, and agricultural window tinting across Eastern Maryland, Delaware, and Pennsylvania. Free quotes available.'
+  'Solara Tinting Solutions — commercial, marine, residential & agricultural window tinting on the Eastern Shore, Maryland, DE & PA. Licensed 3M dealer. Free quotes.'
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`
 
 export default function SEO({

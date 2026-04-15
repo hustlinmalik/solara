@@ -105,7 +105,7 @@ export default function MarinePage() {
     localBusinessSchema,
     serviceSchema({
       name: 'Marine Window Tinting',
-      description: 'Specialized marine window tinting for boats, yachts, and waterfront properties on the Chesapeake Bay and Eastern Maryland coast. Salt-resistant, marine-grade films for heat rejection, anti-glare navigation, and cabin privacy. Licensed 3M authorized dealer.',
+      description: 'Specialized marine window tinting for boats, yachts, and waterfront properties on the Chesapeake Bay and Eastern Shore of Maryland. Salt-resistant, marine-grade films for heat rejection, anti-glare navigation, and cabin privacy. Licensed 3M authorized dealer.',
       url: `${SITE_URL}/services/marine`,
     }),
     faqSchema(faqs),
@@ -114,8 +114,8 @@ export default function MarinePage() {
   return (
     <div className="bg-navy-950 min-h-screen">
       <SEO
-        title="Marine Window Tinting | Chesapeake Bay & Eastern Maryland"
-        description="Marine-grade window tinting for boats, yachts & waterfront properties on the Chesapeake Bay and Eastern Maryland coast. Salt-resistant films, anti-glare navigation, cabin privacy. Licensed 3M dealer. Free quote."
+        title="Marine Window Tinting | Chesapeake Bay & Eastern Shore Maryland"
+        description="Marine window tinting for boats & yachts on the Chesapeake Bay & Eastern Shore, Maryland. Salt-resistant films, heat rejection & anti-glare. Licensed 3M dealer. Free quote."
         canonical="/services/marine"
         schemas={schemas}
       />

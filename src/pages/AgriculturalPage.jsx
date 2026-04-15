@@ -111,7 +111,7 @@ export default function AgriculturalPage() {
     localBusinessSchema,
     serviceSchema({
       name: 'Agricultural Equipment Window Tinting',
-      description: 'Window tinting for tractor cabs, combine harvesters, sprayers and agricultural equipment across Eastern Maryland and the Delmarva Peninsula. UV protection, heat rejection, anti-glare, and safety film for operators. Licensed 3M authorized dealer.',
+      description: 'Window tinting for tractor cabs, combine harvesters, sprayers and agricultural equipment across the Eastern Shore, Maryland, and the Delmarva Peninsula. UV protection, heat rejection, anti-glare, and safety film for operators. Licensed 3M authorized dealer.',
       url: `${SITE_URL}/services/agricultural`,
     }),
     faqSchema(faqs),
@@ -120,8 +120,8 @@ export default function AgriculturalPage() {
   return (
     <div className="bg-navy-950 min-h-screen">
       <SEO
-        title="Agricultural Equipment Window Tinting | Eastern Maryland"
-        description="Protect operators with professional agricultural window tinting for tractors, combines & equipment cabs across Eastern Maryland and the Delmarva Peninsula. Heat rejection, UV protection & anti-glare film. Licensed 3M dealer. Free quote."
+        title="Agricultural Equipment Window Tinting | Eastern Shore & Maryland"
+        description="Agricultural window tinting for tractors & equipment cabs on the Eastern Shore & Maryland. Heat rejection, UV protection & anti-glare film. Licensed 3M dealer. Free quote."
         canonical="/services/agricultural"
         schemas={schemas}
       />
