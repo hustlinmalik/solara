@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -46,6 +47,7 @@ function App() {
           <Route path="/services/agricultural" element={<AgriculturalPage />} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </HelmetProvider>
   )
 }
