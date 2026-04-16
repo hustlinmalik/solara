@@ -20,6 +20,9 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  icons: {
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({ children }) {
