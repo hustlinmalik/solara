@@ -101,8 +101,8 @@ const beforeAfterPairs = [
 export const metadata = {
   title: 'Marine Window Tinting | Chesapeake Bay & Eastern Shore Maryland',
   description: 'Marine window tinting for boats & yachts on the Chesapeake Bay & Eastern Shore, Maryland. Salt-resistant films, heat rejection & anti-glare. Licensed 3M dealer. Free quote.',
-  alternates: { canonical: `${SITE_URL}/services/marine` },
-  openGraph: { url: `${SITE_URL}/services/marine` },
+  alternates: { canonical: '/services/marine' },
+  openGraph: { url: '/services/marine' },
 }
 
 export default function MarinePage() {

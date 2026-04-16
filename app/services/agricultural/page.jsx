@@ -107,8 +107,8 @@ const beforeAfterPairs = [
 export const metadata = {
   title: 'Agricultural Equipment Window Tinting | Eastern Shore & Maryland',
   description: 'Agricultural window tinting for tractors & equipment cabs on the Eastern Shore & Maryland. Heat rejection, UV protection & anti-glare film. Licensed 3M dealer. Free quote.',
-  alternates: { canonical: `${SITE_URL}/services/agricultural` },
-  openGraph: { url: `${SITE_URL}/services/agricultural` },
+  alternates: { canonical: '/services/agricultural' },
+  openGraph: { url: '/services/agricultural' },
 }
 
 export default function AgriculturalPage() {

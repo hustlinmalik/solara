@@ -105,8 +105,8 @@ const beforeAfterPairs = [
 export const metadata = {
   title: 'Commercial Window Tinting | Eastern Shore, Maryland & Delmarva',
   description: 'Commercial window tinting on the Eastern Shore, Maryland, DE & PA. Reduce energy costs, improve comfort & enhance security. Licensed 3M dealer. Free quote.',
-  alternates: { canonical: `${SITE_URL}/services/commercial` },
-  openGraph: { url: `${SITE_URL}/services/commercial` },
+  alternates: { canonical: '/services/commercial' },
+  openGraph: { url: '/services/commercial' },
 }
 
 export default function CommercialPage() {

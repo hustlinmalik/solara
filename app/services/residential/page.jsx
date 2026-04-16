@@ -95,8 +95,8 @@ const beforeAfterPairs = [
 export const metadata = {
   title: 'Residential Window Tinting | Eastern Shore & Maryland',
   description: 'Professional residential window tinting on the Eastern Shore & Maryland, DE & PA. UV protection, heat reduction, privacy & safety films. Licensed 3M dealer. Free quote.',
-  alternates: { canonical: `${SITE_URL}/services/residential` },
-  openGraph: { url: `${SITE_URL}/services/residential` },
+  alternates: { canonical: '/services/residential' },
+  openGraph: { url: '/services/residential' },
 }
 
 export default function ResidentialPage() {
