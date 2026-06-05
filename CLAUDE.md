@@ -79,9 +79,8 @@ Defined in `app/globals.css` via `@theme`:
 ## Pending Items
 - [ ] Add `og-image.jpg` (1200×630px) to `/public/` for social sharing previews — currently referenced in metadata but file does not exist
 - [ ] Uncomment Before/After slider sections once photos are ready
-- [ ] Connect custom domain `solaratinting.com` to the `solara-next` Vercel project (move from old Vercel project if not done yet)
+- [x] Connect custom domain `solaratinting.com` to the `solara-next` Vercel project — complete
 - [ ] Delete old Vercel `solara` project (original Vite site) from Vercel dashboard
-- [ ] Determine domain registrar to complete DNS migration from WordPress
 
 ## What Was Migrated From
 The site was originally built as a **Vite + React SPA** (`solara-app/`) and migrated to Next.js for:
